@@ -9,3 +9,19 @@
 img{
     border-radius: 3%;
 }
+
+button{
+    border-radius: 10%;
+}
+
+p{
+    text-indent: 10px;
+}
+
+#container{
+    padding: 10px;
+    margin: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
