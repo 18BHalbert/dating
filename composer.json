@@ -1,0 +1,12 @@
+{
+  "name": "/home2/bhalber1/public_html/IT328/dating",
+  "authors": [
+    {
+      "name": "Benjamin Halbert",
+      "email": "Bhalbert2@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
