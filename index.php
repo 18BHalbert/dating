@@ -67,6 +67,7 @@ $f3->route('GET /Interests', function($f3) {
 $f3->route('GET /Summary', function() {
     $view = new View;
     echo $view->render('views/summary.html');
+    session_destroy();
 });
 //Run fat free
 $f3->run();
