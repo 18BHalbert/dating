@@ -15,17 +15,15 @@
     <h1>Interests</h1>
 
     <form action="#" method="post" class="form-horizontal">
-        <label for="InDoor" class="col-sm-2 control-label"><strong>Email</strong></label>
-        <div class="row" id="InDoor">
-            <repeat group="{{ @InInterests }}" value="{{ @In }}">
-                <input type="checkbox" name="InInterests[]" value="{{ @In }}">{{ ucfirst(@InInterest) }}</input>
+        <div class="form-group">
+            <label><strong>In-door</strong></label>
+            <repeat group="{{ @InInterests }}" value="{{ @In }}"><br>
+                <input type="checkbox" name="InInterests[]" value="{{ @In }}">{{ ucfirst(@InInterest) }}<br>
             </repeat>
-        </div>
 
-        <label for="OutDoor" class="col-sm-2 control-label"><strong>Email</strong></label>
-        <div class="row" id="OutDoor">
+            <label><strong>Out-door</strong></label><br>
             <repeat group="{{ @OutInterests }}" value="{{ @Out }}">
-                <input type="checkbox" name="OutInterests[]" value="{{ @Out }}">{{ ucfirst(@OutInterest) }}</input>
+                <input type="checkbox" name="OutInterests[]" value="{{ @Out }}">{{ ucfirst(@OutInterest) }}
             </repeat>
         </div>
 
