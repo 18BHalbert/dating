@@ -20,7 +20,7 @@
                 <div class="form-group">
                     <label for="FirstName" class="col-sm-2 control-label"><strong>First Name</strong></label>
                     <div class="col-sm-4">
-                        <input class="form-control" type="text" name="FirstName" id="FirstName">
+                        <input class="form-control" type="text" name="FirstName" id="FirstName" value="{{@FirstName}}">
                     </div>
 
                     <label for="LastName" class="col-sm-2 control-label"><strong>Last Name</strong></label>
@@ -38,8 +38,8 @@
                     <label class="col-sm-2 control-label"><strong>Gender</strong></label>
 
                     <div class="col-sm-4">
-                        <input type="radio" name="Gender" id="Male" value="Male">
-                        <input type="radio" name="Gender" id="Female" value="Female">
+                        <input type="radio" name="Gender" id="Male" value="Male"> Male
+                        <input type="radio" name="Gender" id="Female" value="Female"> Female
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@
                     <a href="">privacy policy</a>. Profile information can only be viewed by others with your permission.</div>
             </div>
         </div>
-        <a class="btn btn-primary float-right" href="profile">Next ></a><br><br>
+        <a class="btn btn-primary float-right" type="submit" href="profile">Next ></a><br><br>
     </form>
 </div>
 
