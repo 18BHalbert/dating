@@ -20,12 +20,17 @@
                 <div class="form-group">
                     <label for="Email" class="col-sm-2 control-label"><strong>Email</strong></label>
                     <div class="col-sm-4">
-                        <input class="form-control" type="text" name="Email" id="Email">
+                        <input class="form-control" type="text" name="Email" id="Email"  value="{{@Email}}">
                     </div>
+                    <span class="err">
+                        <check if="{{isset(@errors['Email']) }}">
+                            {{@errors['Email']}}
+                        </check>
+                    </span>
                 </div>
                 <div class="form-group">
                     <label for="State" class="col-sm-2 control-label"><strong>State</strong></label><br>
-                    <select id="State">
+                    <select id="State" name="State">
                         <option value="Washington">Washington</option>
                     </select>
                 </div>
@@ -46,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <a class="btn btn-primary float-right" href="Interests">Next ></a><br><br>
+        <input class="btn btn-primary float-right" type="submit" value="Next >"><br><br>
     </form>
 </div>
 

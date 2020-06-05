@@ -21,16 +21,31 @@
                     <label for="FirstName" class="col-sm-2 control-label"><strong>First Name</strong></label>
                     <div class="col-sm-4">
                         <input class="form-control" type="text" name="FirstName" id="FirstName" value="{{@FirstName}}">
+                        <span class="err">
+                            <check if="{{isset(@errors['FirstName']) }}">
+                                {{@errors['FirstName']}}
+                            </check>
+                        </span>
                     </div>
 
                     <label for="LastName" class="col-sm-2 control-label"><strong>Last Name</strong></label>
                     <div class="col-sm-4">
-                        <input class="form-control" type="text" name="LastName" id="LastName">
+                        <input class="form-control" type="text" name="LastName" id="LastName" value="{{@LastName}}">
+                        <span class="err">
+                            <check if="{{isset(@errors['LastName']) }}">
+                                {{@errors['LastName']}}
+                            </check>
+                        </span>
                     </div>
 
                     <label for="Age" class="col-sm-2 control-label"><strong>Age</strong></label>
                     <div class="col-sm-4">
-                        <input class="form-control" type="text" name="Age" id="Age">
+                        <input class="form-control" type="text" name="Age" id="Age" value="{{@Age}}">
+                        <span class="err">
+                            <check if="{{isset(@errors['Age']) }}">
+                                {{@errors['Age']}}
+                            </check>
+                        </span>
                     </div>
                 </div>
 
@@ -45,15 +60,25 @@
 
                 <label for="Number" class="col-sm-2 control-label"><strong>Phone Number</strong></label>
                 <div class="col-sm-4">
-                    <input class="form-control" type="text" name="Number" id="Number">
+                    <input class="form-control" type="text" name="Number" id="Number" value="{{@Number}}">
+                    <span class="err">
+                        <check if="{{isset(@errors['Number']) }}">
+                            {{@errors['Number']}}
+                        </check>
+                    </span>
                 </div>
+
+                <label for="premium"><strong>Premium Membership</strong>
+                    <input class="form-control" type="checkbox" name="premium" id="premium">
+                    Sign me up for a Premium Account!
+                </label>
             </div>
             <div class="col-sm-3">
                 <div id="Note"><Strong>Note: </Strong>All information entered is protected by our
                     <a href="">privacy policy</a>. Profile information can only be viewed by others with your permission.</div>
             </div>
         </div>
-        <a class="btn btn-primary float-right" type="submit" href="profile">Next ></a><br><br>
+        <input class="btn btn-primary float-right" type="submit" value="Next >"><br><br>
     </form>
 </div>
 

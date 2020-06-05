@@ -16,14 +16,14 @@
         <div class="col-sm-6">
             <table class="table table-bordered">
                 <tbody>
-                <tr><td>Name: {{ @SESSION.FirstName }} {{ @SESSION.LastName }}</td></tr>
-                <tr><td>Gender: {{ @SESSION.Gender }}</td>
-                </tr><tr><td>Age: {{ @SESSION.Age }}</td></tr>
-                <tr><td>Phone: {{ @SESSION.Phone }}</td></tr>
-                <tr><td>Email: {{ @SESSION.Email }}</td></tr>
-                <tr><td>State: {{ @SESSION.State }}</td></tr>
-                <tr><td>Seeking: {{ @SESSION.Seeking }}</td></tr>
-                <tr><td>Interests: {{ @SESSION.Interests }}</td></tr>
+                <tr><td>Name: {{ @SESSION.Member->getFname }} {{ @SESSION.Member->getLname }}</td></tr>
+                <tr><td>Gender: {{ @SESSION.Member->getGender }}</td>
+                </tr><tr><td>Age: {{ @SESSION.Member->getAge }}</td></tr>
+                <tr><td>Phone: {{ @SESSION.Member->getPhone }}</td></tr>
+                <tr><td>Email: {{ @SESSION.Member->getEmail }}</td></tr>
+                <tr><td>State: {{ @SESSION.Member->getState }}</td></tr>
+                <tr><td>Seeking: {{ @SESSION.Member->getSeeking }}</td></tr>
+                <tr><td>Interests: {{ @SESSION.Member->getInterests }}</td></tr>
                 </tbody>
             </table>
         </div>
